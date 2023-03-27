@@ -1,0 +1,634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  font-weight: 400;
+  color: #444444;
+}
+
+:root {
+  --c: #6d56c1;
+  --c2: #4e2ec2;
+}
+
+header {
+  background-image: linear-gradient(to right, blue, pink);
+  width: 100%;
+  height: 100%;
+}
+
+#headerTextContainer {
+  font-size: small;
+}
+
+#Hidden2 {
+  display: none;
+  background-image: linear-gradient(to right, blue, pink);
+}
+
+#Hidden1 {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  box-shadow: "0px 0px 10px 0px gray";
+}
+
+#Hidden2, #Hidden1 {
+  color: white;
+  padding: 0 3%;
+}
+
+.nav-link:onclick {
+  text-decoration: underline !important;
+}
+
+#txContent {
+  display: flex;
+  width: 100vw;
+  height: 470px;
+  padding-top: 150px;
+}
+
+#container1 {
+  display: flex;
+  gap: 4%;
+}
+
+#LSide {
+  width: 30%;
+  display: flex;
+}
+#LSide img {
+  width: 200px;
+  height: 350px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-left: 25%;
+  position: relative;
+}
+
+#RSide {
+  width: 30%;
+  height: 100%;
+  color: white;
+}
+#RSide img {
+  width: 20px;
+}
+#RSide .op1 {
+  opacity: 0.5;
+}
+
+.left2 {
+  font-family: Roboto Mono, monospace;
+}
+
+#helloContainer, #resumeContainer, #myprojectsContainer {
+  width: 100%;
+  padding: 8% 8% 3% 8%;
+  opacity: 0.89;
+  font-size: 18px;
+  color: #444444;
+}
+#helloContainer #helloText, #helloContainer #resumeText, #resumeContainer #helloText, #resumeContainer #resumeText, #myprojectsContainer #helloText, #myprojectsContainer #resumeText {
+  padding-right: 15%;
+}
+#helloContainer #helloText p, #helloContainer #helloText h1, #helloContainer #resumeText p, #helloContainer #resumeText h1, #resumeContainer #helloText p, #resumeContainer #helloText h1, #resumeContainer #resumeText p, #resumeContainer #resumeText h1, #myprojectsContainer #helloText p, #myprojectsContainer #helloText h1, #myprojectsContainer #resumeText p, #myprojectsContainer #resumeText h1 {
+  margin-bottom: 4%;
+}
+
+#helloContainer {
+  border-bottom: 1px solid lightgrey;
+}
+
+#myprojectsText {
+  padding-right: 15%;
+}
+#myprojectsText h1 {
+  margin-bottom: 4%;
+}
+#myprojectsText .navbar-brand {
+  color: #999;
+}
+
+.btn1 {
+  width: 170px;
+  height: 50px;
+  background-color: var(--c);
+  border-radius: 50%;
+  border-color: transparent;
+  color: white;
+}
+.btn1 img {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.section__resume {
+  width: 80%;
+  padding: 0 8%;
+  margin: 4% 0;
+  height: 100%;
+}
+.section__resume .resume-list_title {
+  font-family: Roboto Mono, monospace;
+  font-family: Roboto Mono, monospace;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 7%;
+}
+.section__resume .Contain {
+  display: flex;
+  height: 100%;
+}
+.section__resume .resume-list__block {
+  padding: 0 0 30px 30px;
+  font-size: 18px;
+  color: #444444;
+  border-left: 2px solid var(--c);
+}
+.section__resume .resume-list__block::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border: 2px solid var(--c);
+  border-radius: 50%;
+  left: 7.6%;
+}
+.section__resume .resume-list__block-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--c);
+  font-size: 18px;
+  font-family: Roboto Mono, monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.section__resume .resume-list__block-date {
+  opacity: 0.5;
+}
+.section__resume .resume-list__design {
+  padding-top: 5px;
+  height: 100%;
+}
+
+.progress-list p {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-list .progress-list__title {
+  font-family: Roboto Mono, monospace;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 7%;
+}
+.progress-list .progress-list__skill {
+  padding: 2% 8% 8% 0;
+  font-size: 0.75rem;
+  font-family: Roboto Mono, monospace;
+  color: #444444;
+}
+.progress-list .progress {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  height: 7px;
+}
+.progress-list .progress-bar {
+  background-color: var(--c);
+  height: 7px;
+  color: #fff;
+  transition: width 0.6s ease;
+  transition: all ease;
+}
+
+.row {
+  width: 100%;
+}
+
+#navbar-example2 .navbar-brand {
+  width: 100%;
+  color: #999999;
+  font-size: 15px;
+  padding: 0 50px 0 0;
+  font-family: Roboto Mono, monospace;
+  font-weight: 700;
+}
+
+#row {
+  display: flex;
+}
+
+.card {
+  border: 1px solid black;
+  margin-bottom: 40px;
+  color: #444444;
+}
+.card h5, .card p {
+  margin: 10px 0 30px 30px;
+}
+.card h5 {
+  font-weight: 800;
+  font-family: Roboto Mono, monospace;
+}
+.card p {
+  font-size: 16px;
+}
+.card h6 {
+  margin: 0 0 10px 30px;
+}
+.card a {
+  margin: 0 0 30px 200px;
+  margin-top: 55px;
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  float: right;
+  color: var(--c2);
+  font-weight: 700;
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+.card img {
+  width: 40%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  color: #444444;
+}
+.card .tags {
+  margin-left: 30px;
+}
+.card button {
+  font-size: 14px;
+  box-shadow: 0 2px 2px 0 gray;
+  margin: 0px 10px 10px 0px;
+  padding: 5px 10px;
+  height: 30px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 2px 2px rgb(245, 228, 228);
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.ImgDiv {
+  z-index: 2;
+  border-radius: 50%;
+  background-color: white;
+  color: #7b67c7;
+  width: 130px;
+  height: 45px;
+  margin: 50px 50px 50px 45%;
+  left: 1000;
+  text-align: center;
+}
+.ImgDiv .comma {
+  text-align: center;
+  font-size: 5rem;
+  border-radius: 50%;
+  padding: 30px 0 0;
+  color: #7b67c7;
+  background-color: white;
+  letter-spacing: -10px;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  padding: 5% 15% 5% 15%;
+  opacity: 1;
+  font-size: 20px;
+  background-image: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0deg, 34%, 71%, 0.95));
+  background-color: white;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+#carouselExampleIndicators .carousel-inner {
+  padding: 3% 0 3% 0;
+  width: 100%;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item {
+  width: 100%;
+}
+#carouselExampleIndicators .carousel-inner #pb {
+  font-size: 16px;
+  font-style: italic;
+  border-bottom: 1px solid rgb(233, 170, 54);
+}
+#carouselExampleIndicators .carousel-inner h3, #carouselExampleIndicators .carousel-inner p {
+  margin-bottom: 5%;
+}
+#carouselExampleIndicators .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: opacity 0.6s ease;
+}
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: white;
+}
+#carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators .carousel-control-prev {
+  opacity: 0.7;
+}
+#carouselExampleIndicators .carousel-control-next:hover {
+  opacity: 1;
+}
+#carouselExampleIndicators .carousel-control-prev:hover {
+  opacity: 1;
+}
+
+.postsContainer {
+  width: 100%;
+  padding: 8% 8% 3% 8%;
+  opacity: 0.89;
+  font-size: 18px;
+  color: #444444;
+}
+.postsContainer .cardsContainer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 0 3% 0;
+  height: 100%;
+}
+.postsContainer .cardsContainer2 .Card2 {
+  height: 550px;
+  border: 1px solid #ccc;
+}
+.postsContainer .cardsContainer2 .Card2:hover {
+  box-shadow: 4px 4px 4px 4px rgb(245, 228, 228);
+}
+.postsContainer .cardsContainer2 img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.postsContainer .cardsContainer2 .card-body {
+  padding: 20px 40px 40px 20px;
+  height: 50%;
+}
+.postsContainer .cardsContainer2 .card-title {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Roboto Mono, monospace;
+  margin-bottom: 15px;
+}
+.postsContainer .cardsContainer2 .card-text {
+  font-size: 18px;
+}
+.postsContainer .cardsContainer2 .card-date, .postsContainer .cardsContainer2 .card-text {
+  color: #999;
+}
+.postsContainer .cardsContainer2 .card-date {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.lastContainer {
+  padding: 8% 8% 1% 8%;
+  color: white;
+  font-family: Roboto Mono, monospace;
+  background-image: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0deg, 34%, 71%, 0.95));
+}
+.lastContainer .contacts {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lastContainer #leftSide {
+  width: 50%;
+}
+.lastContainer #contacts_header {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: Roboto Mono, monospace;
+  color: white;
+}
+.lastContainer .contact-list dt {
+  font-family: Roboto Mono, monospace;
+  float: left;
+  font-weight: 700;
+}
+.lastContainer .contact-list {
+  width: 100%;
+}
+.lastContainer .contact-list dd a {
+  font-family: Roboto Mono, monospace;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+.lastContainer .contact-list dd a:hover {
+  text-decoration: underline;
+}
+.lastContainer .contacts__social ul {
+  margin-top: 10%;
+  padding: 0;
+}
+.lastContainer .contacts__social ul li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+.lastContainer .contacts__social ul li a {
+  padding: 6px 0;
+  color: white;
+  list-style-type: none;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.lastContainer .contacts__social ul li a:hover {
+  text-decoration: none !important;
+  color: var(--c);
+  background-color: white;
+}
+.lastContainer #rightSide {
+  width: 50%;
+  height: 100%;
+}
+.lastContainer #rightSide .contacts__form-title, .lastContainer #rightSide .footer p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
+}
+.lastContainer #rightSide .contacts__form-title {
+  margin-bottom: 20px;
+}
+.lastContainer #rightSide .footer p {
+  position: relative;
+  bottom: 0;
+  font-family: Roboto Mono, monospace;
+}
+.lastContainer #rightSide .contacts__form input, .lastContainer #rightSide .contacts__form textarea {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
+  outline: 0;
+  margin-bottom: 20px;
+}
+.lastContainer #rightSide .contacts__form input:focus, .lastContainer #rightSide .contacts__form textarea:focus {
+  box-shadow: inset 0 0 10px white;
+}
+.lastContainer #rightSide .contacts__form input::-moz-placeholder, .lastContainer #rightSide .contacts__form textarea::-moz-placeholder {
+  color: white;
+}
+.lastContainer #rightSide .contacts__form input:-ms-input-placeholder, .lastContainer #rightSide .contacts__form textarea:-ms-input-placeholder {
+  color: white;
+}
+.lastContainer #rightSide .contacts__form input::placeholder, .lastContainer #rightSide .contacts__form textarea::placeholder {
+  color: white;
+}
+.lastContainer #rightSide .site-btn.site-btn--form {
+  width: 100%;
+  border: none !important;
+  box-shadow: 0 1px 29px rgba(0, 0, 0, 0.16);
+}
+.lastContainer #rightSide .site-btn {
+  background-color: var(--c);
+  height: 50px;
+  border-radius: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px;
+  min-width: 170px;
+  text-align: center;
+  display: inline-block;
+  color: white !important;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.sittings {
+  display: flex;
+  position: fixed;
+  right: 0;
+  width: 130px;
+  height: 40px;
+  bottom: 15%;
+  z-index: 2;
+  transition: all 0.6s;
+  background-color: #999;
+  justify-content: center;
+  align-items: center;
+}
+.sittings .im1 {
+  width: 33.3%;
+  height: 100%;
+  background: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sittings .im2 {
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.sittings .im3 {
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+@media (max-width: 990px) {
+  #LSide, #Hidden1 {
+    display: none;
+  }
+  #Hidden2 {
+    display: flex;
+  }
+  #txContent {
+    padding-top: 80px;
+  }
+  #RSide {
+    padding-left: 20%;
+    width: 90%;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  .cardsContainer2 {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardsContainer2 .col-md-4 {
+    width: 90% !important;
+    margin-bottom: 30px;
+  }
+  .contacts {
+    display: block;
+  }
+  .contacts #rightSide, .contacts #leftSide {
+    width: 100%;
+  }
+  .contacts #leftSide {
+    margin-bottom: 40.6px;
+  }
+}
+@media (max-width: 768px) {
+  .resume-list__block {
+    padding: 0 0 20px 20px;
+  }
+  .resume-list__block::before {
+    left: 5%;
+  }
+  .progress-list__skill {
+    width: 100%;
+  }
+  #row {
+    display: block;
+  }
+  #row img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=portfolio.css.map */
